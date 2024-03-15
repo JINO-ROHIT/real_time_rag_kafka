@@ -3,3 +3,4 @@
 *.env
 *.npz
 data/
+__pycache__
