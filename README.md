@@ -1,3 +1,3 @@
-# Real Time RAG using Kafka pipelines and a Slackbot
+# Real Time RAG using Kafka pipelines
 
-This project shows how to create a real time kafka pipeline and answer questions asked in a slack channel.
+This project shows how to create a real time kafka pipeline to answer questions related to the context from a pdf.
