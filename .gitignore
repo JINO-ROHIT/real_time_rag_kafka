@@ -1,3 +1,5 @@
 *.ipynb
 *.py
 *.env
+*.npz
+data/
