@@ -18,14 +18,12 @@ consumer = KafkaConsumer('myfirsttopic', bootstrap_servers='localhost:9092')
 def load():
     model_name_or_path = r'E:\huggingface\hub\models--meta-llama--Llama-2-7b-chat-hf\snapshots\c1b0db933684edbfe29a06fa47eb19cc48025e93'
 
-    tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, 
-                                            #token = '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',
+    tokenizer = AutoTokenizer.from_pretrained(model_name_or_path,
                                             use_fast=True)
     streamer = TextIteratorStreamer(tokenizer)
 
     model = AutoModelForCausalLM.from_pretrained(model_name_or_path,
             trust_remote_code=True,
-            #token = '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',
             device_map = "cuda:0",
             load_in_4bit = True
     )
