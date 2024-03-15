@@ -4,7 +4,7 @@ This project shows how to create a real time kafka pipeline for RAG.
 
 ## Project Overview
 
-This project is designed with a producer and consumer setup for a real time RAG using kakfa pipelines using Vlite as a numpy vector database.
+This project is designed with a producer and consumer setup for real time RAG using kakfa pipelines using Vlite as a numpy vector database.
 
 ## How to run
 
